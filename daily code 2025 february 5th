@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+float CylinderVolume(int height, int radius);
+
+int main() {
+    float answer;
+
+    answer = CylinderVolume(4, 6);
+    cout << "The volume of the cylinder is " << answer << endl;
+
+    return 0;
+}
+
+// Function definition
+float CylinderVolume(int height, int radius) {
+    float pi = 3.14159;
+    return pi * radius * radius * height;  
+}
