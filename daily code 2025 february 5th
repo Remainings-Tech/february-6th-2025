@@ -1,19 +1,20 @@
+//Kenny and Jeremy
+//
 #include<iostream>
 using namespace std;
 
+//declaration
 float CylinderVolume(int height, int radius);
+//1) name, 2) PARAMETERS (), 3)RETURN (goes in front)
 
 int main() {
-    float answer;
+	//call
+	cout<<CylinderVolume(5,5);
 
-    answer = CylinderVolume(4, 6);
-    cout << "The volume of the cylinder is " << answer << endl;
-
-    return 0;
 }
 
-// Function definition
+//definition
 float CylinderVolume(int height, int radius) {
-    float pi = 3.14159;
-    return pi * radius * radius * height;  
+	return 3.14 * radius * radius * height;
 }
+
